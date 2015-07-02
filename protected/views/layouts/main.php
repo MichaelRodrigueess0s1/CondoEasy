@@ -6,21 +6,49 @@
 	<meta name="language" content="en">
 
         <?php 
-       echo Yii::app()->bootstrap->registerAllCss();
-        echo Yii::app()->bootstrap->registerCoreScripts(); 
+       //echo Yii::app()->bootstrap->registerAllCss();
+        //echo Yii::app()->bootstrap->registerCoreScripts(); 
        ?>
+        <script src="../../../js/additional-methods.min.js"></script>
+        <script src="../../../js/bootstrap-switch.js"></script>
+        <script src="../../../js/bootstrap-wysiwyg-custom.js"></script>
+        <script src="../../../js/bootstrap.js"></script>
+        <script src="../../../js/bootstrap-wysiwyg.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/calendar-custom.js"></script>
+        <script src="../../../js/chartjs-custom.js"></script>
+        <script src="../../../js/charts-flot.js"></script>
+        <script src="../../../js/charts-other.js"></script>
+        <script src="../../../js/charts-xcharts.js"></script>
+        <script src="../../../js/charts.js"></script>
+        <script src="../../../js/dynamic-table.js"></script>
+        <script src="../../../js/easy-pie-chart.js"></script>
+        <script src="../../../js/excanvas.min.js"></script>
+        <script src="../../../js/form-component.js"></script>
+        <script src="../../../js/form-validation-script.js"></script>
+        <script src="../../../js/fullcalendar.js"></script>
+        <script src="../../../js/fullcalendar.min.js"></script>
+        <script src="../../../js/ga.js"></script>
+        <script src="../../../js/gdp-data.js"></script>
+        <script src="../../../js/gritter.js"></script>
+        <script src="../../../js/html5shiv.js"></script>
+        <script src="../../../js/index.js"></script>
+        <script src="../../../js/jquery-1.8.3.min.js"></script>
+        <script src="../../../js/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="../../../js/jquery-jvectormap-world-mill-en.js"></script>
+        <script src="../../../js/jquery-ui-1.10.4.min.js"></script>
+        <script src="../../../js/jquery-ui-1.9.2.custom.min.js"></script>
+        <script src="../../../js/jquery.autosize.min.js"></script>
+        <script src="../../../js/"></script>
+        <script src="../../../js/"></script>
+        <script src="../../../js/"></script>
+        <script src="../../../js/"></script>
+        <script src="../../../js/"></script>
+        <script src="../../../js/"></script>
+        <script src="../../../js/"></script>
+        <script src="../../../js/"></script>
         
-        
-	<!-- blueprint CSS framework -->
-<!--	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection">
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print">
-	[if lt IE 8]>
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection">
-	<![endif]
-
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css">-->
-
+       
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
@@ -58,21 +86,24 @@
                         </div>
                 </div>
             </div>
-	</div><!-- mainmenu -->
+	</div>
+        <!-- mainmenu -->
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,
-		)); ?><!-- breadcrumbs -->
+		)); ?>
+        <!-- breadcrumbs -->
 	<?php endif?>
-
-	<?php echo $content; ?>
-
+                
+        <div class="container">
+            <?php echo $content; ?>
+        </div>
 	<div class="clear"></div>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
+		Todos direitos Reservados <?php echo date('Y'); ?> CondoEasy.<br/>
+		<br/>
+		
 	</div><!-- footer -->
 
 
